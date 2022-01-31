@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Movies</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+</head>
+
+<body style="background-color: rgb(171, 171, 172);">
+
+    <div class="container">
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body ">
+                        <img class="modal-img" src="https://picsum.photos/100" alt="">
+                        <p class="modal-genre">Genres</p>
+                        <p class="modal-summary">Summary</p>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <h2 class="title-style text-center">Best Movies</h2>
+
+
+        <form class=" movie-form d-flex">
+
+            <input class="input form-control js-input" type="search" id="form1" class="form-control" placeholder="Search..." aria-label="Search" />
+
+            <select class=" d-flex select-list form-select " aria-label="All">
+                <option value="all" >All</option>
+            </select>
+
+            <select class=" d-flex select__list-two form-select js-sort" aria-label="Alphabet(A-Z)">
+                <option selected>Alphabet(Aa-Zz)</option>
+                <option value="az">Aa-Zz</option>
+                <option value="za">Zz-Aa</option>
+                <option value="new-old">new-old</option> 
+                <option value="old-new">old-new</option>
+                <option value="high-low">10-1</option>
+                <option value="low-high">1-10</option>
+
+            </select>
+
+            <button type="submit" class=" form__btn btn btn-danger">Search</button>
+        </form>
+
+        <ul class="movie-list d-flex"></ul>
+
+
+        <nav class="d-flex justify-content-center mb-3" aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><button class="prev-btn page-link">Prev</button></li>
+
+                <li class="page-item"><button class="next-btn page-link">Next</button></li>
+            </ul>
+        </nav>
+
+        <template class="movie-card">
+             <li class=" movie-item">
+                 <a class="movie-link" href="#">
+                     <img class="movie-img" src="https://picsum.photos/280/150"
+                        width="250";
+                        height="180";
+                        alt="Movies">
+                 </a>
+            <div>
+                <h2 class="movie-name movie-title">Movie name</h2>
+                <p id="genre" class="movie-genre">Action, Drama </p>
+                <p class="movie-year">20.07.2022</p>
+                <p class="movie-reting ">★ 6.7</p>
+
+               <div class="">
+                    <button class="btn btn-danger w-75 mb-2 js-more" data-bs-toggle="modal" data-bs-target="#exampleModal"> See More</button>
+                <button class="btn btn-outline-info w-75">♥ Like</button>
+               </div>
+            </div>
+            </li>
+
+    </template>
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="js/utilis.js"></script>
+    <script src="js/movies.js"></script>
+    <script src="js/index.js"></script>
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

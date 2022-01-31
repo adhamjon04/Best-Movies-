@@ -1,0 +1,90 @@
+.container {
+    width: 1400px !important;
+    background: linear-gradient(90deg, rgb(229, 234, 240) 20%, rgb(243, 243, 240) 80%);
+    height: 100%;
+}
+
+.input {
+    width: 40% !important;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 55px;
+}
+
+.movie-list {
+    text-decoration: none;
+    list-style-type: none;
+    flex-direction: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.movie-item {
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+    height: 450px;
+    background: rgb(250, 248, 248);
+    max-width: 26%;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.movie-link {
+    margin-top: 5px;
+    z-index: 1;
+    width: 200px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.movie-img {
+    margin-left: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    display: block;
+}
+
+.movie-name {
+    margin: 0px;
+    font-size: 20px;
+}
+
+.movie-genre {
+    margin-bottom: 10px !important;
+    width: 300px !important;
+}
+
+.movie-year {
+    margin-bottom: 10px !important;
+    margin: 0px;
+}
+
+.movie-reting {
+    margin-bottom: 10px !important;
+    margin: 0px;
+    color: rgb(233, 219, 32);
+}
+
+.select-list {
+    width: 15% !important;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.select__list-two {
+    width: 15% !important;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.form__btn {
+    width: 15% !important;
+    margin-top: 20px;
+}
+
+.heart-btn {
+    color: red;
+}
